@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectQuery"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From date"
+        android:id="@+id/fromDate"
+        android:layout_below="@+id/selectQuery"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:id="@+id/selectedFromDate"
+        android:layout_alignBaseline="@+id/fromDate"
+        android:layout_alignBottom="@+id/fromDate"
+        android:layout_toRightOf="@+id/fromDate"
+        android:layout_toEndOf="@+id/fromDate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To date"
+        android:id="@+id/toDate"
+        android:layout_below="@+id/fromDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/fromDate"
+        android:layout_alignEnd="@+id/fromDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:id="@+id/selectedToDate"
+        android:layout_alignBaseline="@+id/toDate"
+        android:layout_alignBottom="@+id/toDate"
+        android:layout_toRightOf="@+id/toDate"
+        android:layout_toEndOf="@+id/toDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/resultText"
+        android:layout_below="@+id/toDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="execute"
+        android:id="@+id/button"
+        android:layout_below="@+id/resultText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true" />
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

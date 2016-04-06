@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="query">
+        <item>select the query</item>
+        <item>avg of activity level</item>
+        <item>tot min of walking activity</item>
+        <item>tot num of steps</item>
+        <item>3 most frequently used applications</item>
+        <item>most num of photo taken in a day</item>
+        <item>mark locations on the map</item>
+    </string-array>
+</resources>
